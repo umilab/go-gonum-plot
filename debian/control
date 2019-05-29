@@ -16,8 +16,7 @@ Testsuite: autopkgtest-pkg-go
 
 Package: golang-gonum-v1-plot-dev
 Architecture: all
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
+Depends: ${misc:Depends},
          golang-golang-x-image-dev
 Description: A repository for plotting and visualizing data
  
