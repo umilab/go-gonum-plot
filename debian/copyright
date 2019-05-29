@@ -1,0 +1,15 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: plot
+Source: https://github.com/gonum/plot
+Files-Excluded: vendor Godeps/_workspace
+
+Files: *
+Copyright: 2013 Gonum.org
+License: BSD-3-Clause
+
+Files: debian/*
+Copyright: 2019 UMI.Lab <support@umilab.org>
+License: GPL-2.0
+Comment: Debian packaging is licensed under the same terms as upstream
+
+License: BSD-3-Clause

@@ -1,0 +1,5 @@
+golang-gonum-v1-plot (0.0~git20190515.e2840ee-1umi) UNRELEASED; urgency=medium
+
+  * Initial release from "plot: add Version API for Go modules"
+
+ -- tnga <devtnga@umilab.org>  Wed, 29 May 2019 10:01:30 +0100
