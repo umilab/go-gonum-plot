@@ -1,0 +1,26 @@
+#!/bin/sh
+set -e
+export GOPATH=/usr/share/gocode
+
+case "$1" in
+    install|upgrade)
+        go get -v golang.org/x/exp/rand
+        go get -v gonum.org/v1/gonum
+        go get -v github.com/golang/freetype github.com/fogleman/gg github.com/jung-kurt/gofpdf github.com/ajstarks/svgo
+        go get -v rsc.io/pdf
+        ;;
+
+    abort-upgrade)
+        ;;
+
+    *)
+        echo "preinst called with unknown argument \`$1'" >&2
+        echo "golang dependencies will maybe need manual installation" >&2
+        echo "try to run \`cd /usr/share/gocode/gonum.org/v1/plot && go get ./..\`" >&2
+        exit 0
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

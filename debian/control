@@ -6,7 +6,6 @@ Uploaders: tnga <devtnga@umilab.org>
 Build-Depends: debhelper (>= 10),
                dh-golang,
                golang-any,
-               golang-golang-x-exp-dev,
                golang-golang-x-image-dev
 Standards-Version: 4.1.1
 Homepage: https://github.com/gonum/plot
@@ -19,7 +18,6 @@ Package: golang-gonum-v1-plot-dev
 Architecture: all
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         golang-golang-x-exp-dev,
          golang-golang-x-image-dev
 Description: A repository for plotting and visualizing data
  
