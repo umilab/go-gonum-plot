@@ -2,3 +2,7 @@
 
 %:
 	dh $@ --buildsystem=golang --with=golang
+
+override_dh_golang:
+	# The dh_golang is used to add the Built-using field to the deb.  This is only for reference.
+	# As of https://anonscm.debian.org/cgit/collab-maint/dh-golang.git/commit/script/dh_golang?id=7c3fbec6ea92294477fa8910264fe9bd823f21c3
